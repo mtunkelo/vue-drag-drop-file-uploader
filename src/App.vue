@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <file-uploader></file-uploader>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import FileUploader from './components/FileUploader'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+      FileUploader
   }
 }
 </script>

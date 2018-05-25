@@ -1,13 +1,15 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
 
+
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+Vue.component('file-uploader', require('./components/FileUploader.vue'));
+Vue.component('progress-bar', require('./components/ProgressBar.vue'));
+
 new Vue({
   el: '#app',
-  components: { App },
-  template: '<App/>'
+    components: { App },
+    template: '<App/>'
+
 })
